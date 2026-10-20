@@ -1,0 +1,12 @@
+.opening-panel { position:absolute; z-index:3; top:calc(var(--header) + 7vh); left:6%; width:48%; bottom:160px; overflow-y:auto; padding-right:24px; }
+.opening-panel h1 { margin-top:22px; font:500 clamp(42px,4.5vw,72px)/1.08 var(--font-display); letter-spacing:-.04em; }
+.opening-panel h1 em { color:var(--terra); font-weight:500; }
+.opening-tagline { margin-top:22px; max-width:470px; font-size:15px; line-height:1.7; color:var(--ink-soft); }
+.opening-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 22px; margin-top:28px; max-width:460px; }
+.opening-links a { display:flex; justify-content:space-between; gap:14px; align-items:center; padding:14px 0; border-top:1px solid var(--line-strong); font-size:12px; font-weight:600; }
+.opening-links a:hover { color:var(--terra); }
+.opening-enter { position:absolute; z-index:4; bottom:75px; left:6%; display:flex; flex-wrap:wrap; gap:12px; max-width:80%; }
+.opening-button { display:flex; gap:24px; align-items:center; background:var(--ink); color:var(--studio-lime); padding:18px 28px; font-size:14px; border:1px solid var(--ink); }
+.opening-button:hover { background:var(--terra); }
+.opening-edition { position:absolute; left:6%; bottom:28px; font:9px/1.5 monospace; color:var(--ink-soft); }
+.opening-empty { padding:20px; background:var(--paper); }

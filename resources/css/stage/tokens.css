@@ -1,0 +1,20 @@
+/* All agency stage colors and shared dimensions originate here. */
+.stage-page {
+    --paper: #fbf9f2; --paper-soft: #f0ecf4; --paper-deep: #e0d9e9;
+    --ink: #252331; --ink-soft: #605b70; --ink-faint: #777182;
+    --line: #ddd6e5; --line-strong: #bfb4cf;
+    --terra: #5544bd; --terra-deep: #3c2e90; --terra-soft: #e7e0ff;
+    --leaf: #587535; --sun: #d6ec9d; --studio-lime: #d6ec9d; --studio-blue: #4266d5;
+    --alert: #a13d4e; --alert-soft: #fae9ed; --alert-line: #e9bfca;
+    --white: #fff; --shadow-rgb: 37 35 49; --overlay: rgb(37 35 49 / .15);
+    --radius-card: 5px; --radius-control: 7px;
+    --shadow-card: 0 18px 60px -32px rgb(var(--shadow-rgb) / .4);
+    --shadow-soft: 0 8px 24px -18px rgb(var(--shadow-rgb) / .4);
+    font-variant-emoji: text; height: 100dvh; overflow: hidden; background: var(--paper-deep); color: var(--ink);
+}
+.stage { --ease-cine: cubic-bezier(.22,.8,.24,1); --header: 96px; --gutter: 32px; --board-h: 0px; --drawer: min(720px, calc(100vw - 80px)); --panel-bottom: 200px; --chat-composer-height: 56px; position: relative; height: 100dvh; overflow: hidden; isolation: isolate; }
+.stage :focus-visible,.stage-page :focus-visible { outline: 3px solid var(--studio-blue); outline-offset: 4px; }
+.stage button:disabled { cursor: wait; opacity: .5; }
+.stage-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--terra-deep); }
+.stage-noscript { position: absolute; z-index: 40; inset: auto 20px 20px; padding: 16px; background: var(--paper); color: var(--ink); }
+.stage [class*="text-stone-"] { color: var(--ink-soft); }

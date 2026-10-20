@@ -1,0 +1,14 @@
+.stage-image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--stage-focus); z-index:-2; }
+.stage-shade { position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,color-mix(in srgb,var(--paper) 75%,transparent),transparent 75%); }
+.stage-character { position:absolute; z-index:1; bottom:0; left:52%; height:235px; width:auto; max-width:30%; object-fit:contain; object-position:bottom; pointer-events:none; animation:studio-arrive .45s ease backwards; }
+.stage[data-scene="home"] .stage-character,.stage[data-scene="opening"] .stage-character { left:47%; height:min(68vh,720px); max-width:32%; }
+.stage-tour { position:absolute; z-index:25; left:0; right:0; margin-inline:auto; bottom:80px; width:max-content; max-width:calc(100% - 32px); padding:16px 28px; background:var(--ink); color:var(--paper); border:1px solid var(--line); opacity:0; pointer-events:none; font:italic 21px/1.5 var(--font-display); text-align:center; }
+.stage-tour.is-visible { opacity:1; }
+.stage-tour:empty { display:none; }
+.stage-loader { position:absolute; z-index:30; inset:0; display:flex; gap:20px; align-items:center; justify-content:center; flex-direction:column; background:var(--paper-deep); color:var(--ink); pointer-events:none; animation:studio-loader-out .3s ease 2.5s forwards; }
+.stage-loader.is-ready { opacity:0; visibility:hidden; transition:opacity .2s; }
+.stage.is-leaving .stage-image { transform:scale(1.025); transition:transform .3s ease; }
+.stage.is-leaving > :not(.stage-image,.stage-shade,.stage-loader,.stage-tour),.stage.is-leaving .chat-log,.stage.is-leaving .chat-bar,.stage.is-leaving .chat-launcher { opacity:0; transition:opacity .22s ease; }
+@keyframes studio-arrive { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:none; } }
+@keyframes studio-loader-out { to { opacity:0; visibility:hidden; } }
+@media(prefers-reduced-motion:reduce) { .stage-character,.stage-loader { animation:none; } .stage-loader { opacity:0; visibility:hidden; } .stage.is-leaving .stage-image { transition:none; } }

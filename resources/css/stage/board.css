@@ -1,0 +1,20 @@
+/* The studio uses a numbered project index on the right, not a header tab bar. */
+.studio-index { position:absolute; z-index:4; right:var(--gutter); top:calc(var(--header) + 30px); bottom:55px; width:270px; display:flex; flex-direction:column; background:var(--ink); color:var(--paper); box-shadow:var(--shadow-card); }
+.studio-index-head { padding:24px 22px; display:flex; justify-content:space-between; gap:10px; align-items:center; border-bottom:1px solid color-mix(in srgb,var(--paper) 20%,transparent); }
+.studio-index-head .stage-eyebrow { color:var(--studio-lime); }
+.studio-index-head > span { font:10px monospace; opacity:.5; }
+.stage-navigation { display:flex; flex-direction:column; flex:1; }
+.stage-navigation a { display:flex; align-items:center; gap:14px; flex:1; min-height:64px; padding:12px 22px; border-bottom:1px solid color-mix(in srgb,var(--paper) 14%,transparent); font-size:14px; transition:background .2s,color .2s; }
+.studio-index-number { font:11px monospace; color:var(--studio-lime); }
+.studio-index-arrow { margin-left:auto; font-size:18px; }
+.stage-navigation a:hover,.stage-navigation a[aria-current] { background:var(--terra); color:var(--white); }
+.studio-index-foot { padding:20px 22px; color:var(--studio-lime); font:9px/1.6 monospace; letter-spacing:.08em; }
+.studio-edition { position:absolute; z-index:2; left:var(--gutter); bottom:24px; font:9px/1.4 monospace; color:var(--ink-soft); letter-spacing:.04em; max-width:38%; }
+.studio-subindex { position:absolute; z-index:4; top:calc(var(--header) + 20px); left:var(--gutter); right:334px; height:56px; overflow-x:auto; }
+.studio-subindex .stage-catalog { position:static; display:block; width:100%; }
+.studio-subindex .stage-catalog > :not(nav) { display:none; }
+.studio-subindex .item-nav { display:flex; gap:8px; width:max-content; padding:2px; }
+.studio-subindex .item-nav-heading,.studio-subindex .item-nav-thumb,.studio-subindex .item-nav-price { display:none; }
+.studio-subindex .item-nav a { display:block; padding:11px 14px; border:1px solid var(--line-strong); background:var(--paper); font-size:11px; white-space:nowrap; }
+.studio-subindex .item-nav a[aria-current] { background:var(--terra); color:var(--paper); }
+.studio-subindex .item-nav-text { display:block; }

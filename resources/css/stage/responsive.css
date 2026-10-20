@@ -1,0 +1,83 @@
+@media(min-width:1600px) { .studio-index { width:300px; } .stage-content,.stage:has(.stage-chat.is-open) .stage-content { right:370px; } .studio-subindex { right:370px; } }
+@media(max-width:1100px) and (min-width:761px) { .stage { --gutter:20px; --header:84px; --panel-bottom:150px; } .studio-index { width:215px; top:104px; } .stage-navigation a { padding:10px 16px; font-size:12px; gap:10px; } .stage-content,.stage:has(.stage-chat.is-open) .stage-content { right:255px; padding:22px; } .studio-subindex { right:255px; } .stage-character { height:180px; left:47%; } .stage-welcome { left:4%; width:50%; } .stage-welcome h1 { font-size:60px; } }
+@media(max-width:760px) {
+    .stage { --header:76px; --gutter:16px; --panel-bottom:216px; --drawer:calc(100vw - 24px); }
+    .stage-header { padding:12px 16px; gap:8px; }
+    .stage-header > a,.stage-header > span { gap:8px; max-width:58%; }
+    .stage-header .agency-monogram { width:32px; height:36px; font-size:24px; }
+    .stage-header .font-semibold { font-size:11px; }
+    .stage-header .text-xs { font-size:9px; }
+    .stage-tools { gap:6px; }
+    .stage-lang a { padding:8px 6px; font-size:10px; }
+    .stage-character { left:0; right:0; margin-inline:auto; height:148px; max-width:38%; bottom:66px; }
+    .stage[data-scene="home"] .stage-character,.stage[data-scene="opening"] .stage-character { left:0; right:0; margin-inline:auto; height:220px; max-width:48%; bottom:66px; }
+    .stage-welcome { top:100px; left:22px; right:22px; width:auto; bottom:305px; padding:0 4px 14px; }
+    .stage-welcome h1 { font-size:clamp(40px,10vw,60px); margin-top:10px; }
+    .stage-welcome > p:not(.stage-eyebrow) { font-size:12px; margin-top:14px; line-height:1.65; }
+    .stage-welcome .narrator { margin-top:18px; }
+    .studio-welcome-actions { gap:14px; margin-top:18px; }
+    .studio-welcome-actions .stage-action { font-size:11px; padding:11px 14px; }
+    .studio-text-link { font-size:10px; }
+    .studio-index { top:auto; left:0; right:0; bottom:0; height:66px; width:auto; }
+    .studio-index-head,.studio-index-foot { display:none; }
+    .stage-navigation { flex-direction:row; overflow-x:auto; overscroll-behavior:contain; }
+    .stage-navigation a { flex:0 0 auto; min-height:66px; min-width:112px; max-width:155px; padding:10px 14px; gap:8px; font-size:11px; border-bottom:0; border-right:1px solid color-mix(in srgb,var(--paper) 16%,transparent); }
+    .studio-index-arrow { display:none; }
+    .stage-content,.stage:has(.stage-chat.is-open) .stage-content { left:12px; right:12px; width:auto; top:90px; bottom:216px; padding:20px 16px; }
+    .info-panel,.staff-panel { max-height:none; bottom:216px; }
+    .stage:has(.studio-subindex) .stage-content { top:142px; }
+    .studio-subindex { left:12px; right:12px; top:86px; height:48px; }
+    .studio-subindex .item-nav a { font-size:10px; padding:10px; }
+    .stage-content h2 { font-size:30px; }
+    .panel-close { width:32px; height:32px; }
+    .detail-scene h2 { font-size:26px; }
+    .detail-photo { aspect-ratio:16/9; }
+    .detail-scene-facts { gap:12px; }
+    .detail-scene-step { padding:8px 12px; font-size:11px; }
+    .stage-action { padding:11px 16px; font-size:12px; }
+    .studio-project-grid { gap:14px; margin-top:20px; grid-template-columns:1fr; }
+    .studio-project-card { display:grid; grid-template-columns:100px minmax(0,1fr); align-items:center; }
+    .studio-project-card img { width:100px; height:100%; min-height:108px; aspect-ratio:1; }
+    .studio-project-card > div { padding:12px 28px 12px 14px; }
+    .studio-project-card h3 { font-size:21px; }
+    .studio-project-card p { font-size:10px; }
+    .studio-card-arrow { right:10px; bottom:14px; font-size:18px; }
+    .studio-edition { left:12px; bottom:130px; max-width:26%; font-size:7px; }
+    .chat-launcher { bottom:80px; width:220px; height:44px; font-size:12px; }
+    .chat-log { top:86px; bottom:78px; }
+    .chat-bar { bottom:90px; padding-left:12px; }
+    .chat-log-header { padding:12px; gap:7px; }
+    .chat-log-header .chat-host-avatar { width:28px; height:28px; }
+    .chat-log-header .font-semibold { font-size:12px; }
+    .chat-log-header .text-xs { font-size:9px; max-width:140px; }
+    .chat-log-new { font-size:9px; padding:5px 7px; }
+    .chat-bar input { font-size:13px; }
+    .chat-bar button { font-size:12px; padding-inline:15px; }
+    .chat-draft-dialog { bottom:158px; }
+    .stage:has(.stage-chat.is-open) .stage-character { opacity:0; }
+    .stage:has(.stage-chat.is-open) .studio-index { opacity:1; pointer-events:auto; }
+    .stage-tour { bottom:85px; padding:12px 18px; font-size:16px; }
+    .narrator { gap:10px; padding:12px; }
+    .narrator-inline { padding:0; }
+    .narrator-text { font-size:12px; }
+    .narrator-inline .narrator-text { font-size:13px; }
+    .narrator-name,.narrator-actions button { font-size:10px; }
+    .wizard-progress ol { gap:4px; }
+    .wizard-progress li span { font-size:8px; }
+    .wizard-step { grid-template-columns:1fr; }
+    .wizard-field-wide { grid-column:auto; }
+    .wizard-slots { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .wizard-actions { flex-wrap:wrap; }
+    .opening-panel { top:105px; left:24px; right:24px; width:auto; bottom:300px; padding-right:0; }
+    .opening-panel h1 { font-size:40px; margin-top:14px; }
+    .opening-tagline { font-size:12px; margin-top:16px; }
+    .opening-links { margin-top:22px; gap:0 20px; }
+    .opening-links a { padding:12px 0; font-size:11px; }
+    .opening-enter { left:20px; right:20px; bottom:65px; max-width:none; }
+    .opening-button { justify-content:space-between; width:100%; font-size:12px; padding:16px 20px; }
+    .opening-edition { left:20px; bottom:26px; max-width:90%; font-size:8px; }
+    .stage[data-scene="opening"] .stage-character { bottom:85px; height:215px; }
+}
+@media(max-height:700px) and (min-width:761px) { .stage { --panel-bottom:100px; } .stage-character { height:140px; } .stage-welcome { top:115px; bottom:95px; } .stage-welcome h1 { font-size:56px; } .stage-welcome .narrator { margin-top:18px; } .studio-index { top:108px; bottom:30px; } .stage-navigation a { min-height:48px; } .opening-panel { top:115px; bottom:130px; } .opening-panel h1 { font-size:50px; } .opening-links a { padding:10px 0; } }
+@media(max-height:680px) and (max-width:760px) { .stage { --panel-bottom:160px; } .stage-content,.stage:has(.stage-chat.is-open) .stage-content,.info-panel,.staff-panel { bottom:160px; } .stage-character { height:100px; } .stage[data-scene="home"] .stage-character { height:140px; } .stage-welcome { bottom:225px; } .opening-panel { bottom:240px; } .stage[data-scene="opening"] .stage-character { height:150px; } }
+@media(prefers-reduced-motion:reduce) { .stage-content,.stage-content:not([hidden]),.detail-scene:not([hidden]) { animation:none; } .chat-log,.chat-bar,.chat-launcher,.studio-project-card { transition:none; } }
