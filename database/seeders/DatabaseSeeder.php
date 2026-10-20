@@ -1,0 +1,16 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    public function run(): void
+    {
+        if (! app()->environment(['local', 'testing'])) {
+            return;
+        }
+        $this->call([AgencySeeder::class, ServicePackageSeeder::class, ConsultantSeeder::class, ConsultantImageSeeder::class, ConsultationSlotSeeder::class, AgencyKnowledgeItemSeeder::class]);
+    }
+}

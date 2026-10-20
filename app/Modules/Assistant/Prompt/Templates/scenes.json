@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "title": "CURRENT UI CONTEXT",
+        "scene": "Current scene: {scene}",
+        "service_package": "Selected catalog item: {value}",
+        "consultant": "Selected consultant: {value}",
+        "facility": "Selected process step: {value}",
+        "consultation_draft": "Consultation draft on screen: {value}",
+        "guidance": "Scene guidance: {value}",
+        "none": "none"
+    },
+    "guidance": {
+        "home": "Help find the right agency service, outline a brief or request a consultant slot. Do not repeat the welcome.",
+        "catalog": "Recommend service packages using search_catalog for the stated business goal and budget. Prices are estimates.",
+        "service_package": "Use get_service_package for the selected package. Explain scope and requirements. Offer a consultation; final proposal requires human confirmation.",
+        "team": "Compare consultants and specialties. Use search_team for real slots, with companies=1.",
+        "consultant": "Discuss the selected consultant. Use check_consultation_availability for an actual 60-minute slot.",
+        "facilities": "Explain stored collaboration process steps using search_knowledge.",
+        "facility_detail": "Explain the selected process step using search_knowledge. Do not invent contract terms.",
+        "consultation": "Help complete the 60-minute consultation request, one company per consultant slot. Confirm the full summary before submission. No automatic payment.",
+        "handover": "Offer request_human_handover or available contact buttons for the agency team."
+    }
+}
