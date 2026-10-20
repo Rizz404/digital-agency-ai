@@ -1,0 +1,4 @@
+; Apply only to the target Plesk application. Keep timestamp validation enabled.
+memory_limit = 256M
+max_execution_time = 95
+opcache.validate_timestamps = 1
