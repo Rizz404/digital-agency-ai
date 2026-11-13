@@ -117,7 +117,7 @@ class AgencyStageTest extends TestCase
             ->assertSee('Brand brief')
             ->assertSee('Studio pick')
             ->assertSee('Please prepare: Brand brief.')
-            ->assertSee('images/agency/brand-foundations.svg', false);
+            ->assertSee('images/agency/brand-foundations.webp', false);
 
         $this->get('/demo/catalog/automation-sprint?lang=en')->assertOk()->assertSee('Not taking new projects');
 

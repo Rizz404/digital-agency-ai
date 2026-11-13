@@ -12,7 +12,7 @@ class ConsultantImageSeeder extends Seeder
         $agency = Agency::where('slug', AgencySeeder::SLUG)->firstOrFail();
         foreach ($agency->consultants as $consultant) {
             $consultant->images()->updateOrCreate(['sort_order' => 0], [
-                'image_url' => 'images/agency/'.$consultant->slug.'.svg',
+                'image_url' => 'images/agency/'.$consultant->slug.'.webp',
                 'alt_text' => $consultant->name.' · illustrated demo profile',
             ]);
         }

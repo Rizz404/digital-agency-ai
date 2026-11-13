@@ -31,7 +31,7 @@
             <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <x-ui.input name="tags" label="Tags (comma-separated)" :value="old('tags', implode(', ', $servicePackage->tags ?? []))" placeholder="startup, growth, enterprise, signature" />
                 <x-ui.input name="requirements" label="Requirements (comma-separated)" :value="old('requirements', implode(', ', $servicePackage->requirements ?? []))" placeholder="brand_brief, brand_assets, analytics_access" />
-                <x-ui.input name="image_url" label="Image path or URL" :value="old('image_url', $servicePackage->image_url)" placeholder="images/agency/brand-foundations.svg or https://…" class="sm:col-span-2" />
+                <x-ui.input name="image_url" label="Image path or URL" :value="old('image_url', $servicePackage->image_url)" placeholder="images/agency/brand-foundations.webp or https://…" class="sm:col-span-2" />
             </div>
             <div class="mt-4 flex flex-wrap gap-6">
                 <x-ui.checkbox name="is_featured" label="Featured" :checked="old('is_featured', $servicePackage->is_featured)" />

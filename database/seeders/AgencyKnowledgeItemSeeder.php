@@ -13,7 +13,7 @@ class AgencyKnowledgeItemSeeder extends Seeder
         foreach ([
             [
                 'category' => 'facilities',
-                'image_url' => 'images/agency/brand-foundations.svg',
+                'image_url' => 'images/agency/brand-foundations.webp',
                 'title' => 'Discovery & brief',
                 'body' => 'Kami mulai dari tujuan bisnis, audiens, kebutuhan, kisaran anggaran, dan tenggat. Brief awal membantu tim menyusun cakupan yang sesuai.',
                 'translations' => [
@@ -39,7 +39,7 @@ class AgencyKnowledgeItemSeeder extends Seeder
             ],
             [
                 'category' => 'facilities',
-                'image_url' => 'images/agency/digital-flagship.svg',
+                'image_url' => 'images/agency/digital-flagship.webp',
                 'title' => 'Strategi & konsep',
                 'body' => 'Tim merangkum prioritas dan menyusun arah kreatif. Deliverable, revisi, serta jadwal final disepakati sebelum pekerjaan dimulai.',
                 'translations' => [
@@ -65,7 +65,7 @@ class AgencyKnowledgeItemSeeder extends Seeder
             ],
             [
                 'category' => 'facilities',
-                'image_url' => 'images/agency/content-engine.svg',
+                'image_url' => 'images/agency/content-engine.webp',
                 'title' => 'Produksi & kolaborasi',
                 'body' => 'Pengerjaan mengikuti cakupan yang disepakati dengan titik umpan balik yang jelas. Perubahan di luar cakupan memerlukan persetujuan penawaran tambahan.',
                 'translations' => [
@@ -91,7 +91,7 @@ class AgencyKnowledgeItemSeeder extends Seeder
             ],
             [
                 'category' => 'facilities',
-                'image_url' => 'images/agency/workflow-studio.svg',
+                'image_url' => 'images/agency/workflow-studio.webp',
                 'title' => 'Handover & evaluasi',
                 'body' => 'Tim menyerahkan hasil sesuai kontrak dan membahas langkah selanjutnya. Hak penggunaan aset dan dukungan mengikuti penawaran final.',
                 'translations' => [

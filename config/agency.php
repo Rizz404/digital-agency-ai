@@ -34,16 +34,16 @@ return [
     |
     */
 
-    'avatar_image' => 'images/agency/avatar.svg',
+    'avatar_image' => 'images/agency/avatar.webp',
 
     'scenes' => [
-        'home' => ['image' => 'images/agency/studio-home.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
-        'catalog' => ['image' => 'images/agency/studio-catalog.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
-        'team' => ['image' => 'images/agency/studio-team.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
-        'facilities' => ['image' => 'images/agency/studio-facilities.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
-        'info' => ['image' => 'images/agency/studio-info.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
-        'staff' => ['image' => 'images/agency/studio-staff.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
-        'consultation' => ['image' => 'images/agency/studio-consultation.svg', 'character' => 'images/agency/strategist.svg', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'home' => ['image' => 'images/agency/studio-home.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'catalog' => ['image' => 'images/agency/studio-catalog.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'team' => ['image' => 'images/agency/studio-team.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'facilities' => ['image' => 'images/agency/studio-facilities.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'info' => ['image' => 'images/agency/studio-info.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'staff' => ['image' => 'images/agency/studio-staff.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
+        'consultation' => ['image' => 'images/agency/studio-consultation.webp', 'character' => 'images/agency/strategist.webp', 'focus' => 'center', 'focusMobile' => '55% center', 'anchor' => 'center', 'text' => 'top'],
     ],
 
     'scene_artwork' => [
